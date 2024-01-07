@@ -58,7 +58,6 @@ body {
 }
 
 .header-text {
-    translate: 0 -3vh;
     color: white;
     width: 45%;
     height: fit-content;
