@@ -302,6 +302,14 @@ body {
     animation: horizentalslide 120s linear infinite;
 }
 
+.sport-carousel img {
+    border-radius: 5px;
+}
+
+.sport-carousel:hover {
+    animation-play-state: paused;
+}
+
 /* Annimations */
 
 @keyframes LogoAnimation {
