@@ -287,14 +287,14 @@ body {
     color: #a46ed4;
 }
 
-.sports {
+.carousel-sport {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.sports-carousel {
+.sport-carousel {
     width: 106%;
     display: flex;
     gap: 2vw;
