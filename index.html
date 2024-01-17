@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
-    <title>DIGIDAZZ</title>
+    <title>Digideals</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="logo">
-            <a href="./index.html"><img src="./img/Store Logo.png" alt="Store Logo"></a>
+    <div class="nav-bar flex text-center sm:text-left jutify-center justify-between h-[15vh] px-6">
+        <div class="logo w-1/5 items-center flex justify-center sm:-translate-y-3 sm:block w-[100%]">
+            <a href="./index.html"><img class="h-full" src="./img/Store Logo copy.png" alt="Store Logo"></a>
         </div>
-        <div class="menu">
+        <div class="menu flex-col sm:flex-row items-center w-full gap-6 hidden sm:flex justify-evenly w-2/5 items-center font-bold">
             <div class="menu-item">
-                <h5>Home</h5>
+                <h5 class="hover:text-red-500">Home</h5>
             </div>
             <div class="menu-item">
-                <h5>Pricing</h5>
+                <h5 class="hover:text-red-500">Pricing</h5>
             </div>
             <div class="menu-item">
-                <h5>FAQs</h5>
+                <h5 class="hover:text-red-500">FAQs</h5>
             </div>
             <div class="menu-item">
-                <h5>Contact Us</h5>
+                <h5 class="hover:text-red-500">Contact Us</h5>
             </div>
         </div>
     </div>
-    <div class="header">
-        <div class="header-text">
-            <h1>ACCÉDEZ A TOUTES LES CHAINES TÉLÉ</h1>
-            <p>Profitez d'une qualité d'image exceptionnelle allant jusqu'à 8K, sur tous vos appareils, partout dans le Monde.</p>
-            <button class="header-button">Profitez dès Maintenant</button>
-            <div class="logos">
+    <div class="header sm:flex justify-evenly sm:h-[85vh] px-4 sm:px-0">
+        <div class="header-text text-center items-center sm:w-1/2 flex flex-col gap-4 justify-center">
+            <h1 class="font-bold text-4xl sm:text-6xl">ACCÉDEZ A<br>TOUTES LES<br>CHAINES TÉLÉ</h1>
+            <p class="text-xs sm:text-sm">Profitez d'une qualité d'image exceptionnelle allant jusqu'à 8K, sur tous<br>vos appareils, partout dans le Monde.</p>
+            <button class="header-button p-2 font-bold bg-red-500 w-fit rounded-md">Profitez dès Maintenant</button>
+            <div class="logos flex gap-6">
                 <ion-icon name="logo-apple"></ion-icon>
                 <ion-icon name="logo-android"></ion-icon>
                 <ion-icon name="logo-windows"></ion-icon>
@@ -39,50 +40,58 @@
             </div>
             <p>Satisfait ou Remboursé</p>
         </div>
-        <div class="header-image">
-            <img src="./img/headerImage.png">
+        <div class="header-image hidden items-center hidden sm:flex justify-center w-1/2">
+            <img class="w-2/3" src="./img/headerImage.png">
         </div>
+    </div>        
+    <div class="channels-logo grid grid-cols-2 w-full sm:flex justify-evenly h-fit items-center mt-8 py-4 sm:py-4 sm:my-4">
+        <div class="channel w-full sm:w-2/5 h-full"><img class="w-full scale-[0.5]" src="./img/channels/Canal.png" alt="Canal+"></div>
+        <div class="channel w-full sm:w-2/5 h-full"><img class="w-full scale-[0.5]" src="./img/channels/nickelodeon.png" alt="nickelodeon"></div>
+        <div class="channel w-full sm:w-2/5 h-full"><img class="w-full scale-[0.5]" src="./img/channels/netflix.png" alt="Netflix"></div>
+        <div class="channel w-full sm:w-2/5 h-full"><img class="w-full scale-[0.5]" src="./img/channels/ocs.png" alt="OCS"></div>
     </div>
-    <div class="channels-logo">
-        <div class="channel"><img width="95%" height="60px" src="./img/channels/Canal.png" alt="Canal+"></div>
-        <div class="channel"><img width="95%" height="60px" src="./img/channels/nickelodeon.png" alt="nickelodeon"></div>
-        <div class="channel"><img width="95%" height="60px" src="./img/channels/netflix.png" alt="Netflix"></div>
-        <div class="channel"><img width="95%" height="60px" src="./img/channels/ocs.png" alt="OCS"></div>
-    </div>
-    <div class="instructions">
-        <h1>Comment ça fonctionne ?</h1>
-        <div class="instructions-content">
-            <div id="content-1" class="content">
-                <ion-icon name="bag-outline"></ion-icon>
-                <h1>1. Commander</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, veritatis.</p>
+    <div class="instructions text-center w-full">
+        <h1 class="text-lg sm:text-2xl font-bold mb-6">Comment ça fonctionne ?</h1>
+        <div class="instructions-content flex flex-col sm:flex-row justify-center sm:p-0 p-6 gap-4 sm:gap-2">
+            <div class="content border rounded-md p-4 text-center flex flex-col items-center gap-4 sm:w-[30%]">
+                <ion-icon name="bag-outline" class="text-4xl"></ion-icon>
+                <h1 class="text-xl font-medium">1. Commander</h1>
+                <p>Vous recevez vos identifiants par E-mail dans 5 minutes maximum.</p>
             </div>
-            <div class="content">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-                <h1>2. Installer</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptate.</p>
+            <div class="content border rounded-md p-4 text-center flex flex-col items-center gap-4 sm:w-[30%]">
+                <ion-icon name="logo-whatsapp" class="text-4xl"></ion-icon>
+                <h1 class="text-xl font-medium">2. Installer</h1>
+                <p>Installer l’application Stream IPTV Player ou IPTV Smarters ou XC IPTV ou Tivimate et saisissez vos identifiants.</p>
             </div>
-            <div id="content-3" class="content">
-                <ion-icon name="easel-outline"></ion-icon>
-                <h1>3. Regarder</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, officia.</p>
+            <div class="content border rounded-md p-4 text-center flex flex-col items-center gap-4 sm:w-[30%]">
+                <ion-icon name="easel-outline" class="text-4xl"></ion-icon>
+                <h1 class="text-xl font-medium">3. Regarder</h1>
+                <p>Commencer à regarder des milliers de chaînes Télévision, Films et Séries VOD+ en illimitée.</p>
             </div>
         </div>
     </div>
     <div class="posters">
-        <div class="carousel">
-            <img width="15%" height="350px" src="./img/films/aquaman_and_the_lost_kingdom_ver18.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/arthur_the_king_ver2.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/cabrini.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/ferrari_ver3.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/garfield_movie_ver3.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/ghostbusters_afterlife_two_ver4.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/aquaman_and_the_lost_kingdom_ver18.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/arthur_the_king_ver2.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/cabrini.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/ferrari_ver3.jpg" alt="poster">
-            <img width="15%" height="350px" src="./img/films/garfield_movie_ver3.jpg" alt="poster"> 
-            <img width="15%" height="350px" src="./img/films/ghostbusters_afterlife_two_ver4.jpg" alt="poster">    
+        <div class="carouselsm hidden sm:flex">
+            <img width="15%" height="350px" src="./img/films/aquaman_and_the_lost_kingdom_ver18.jpg">
+            <img width="15%" height="350px" src="./img/films/arthur_the_king_ver2.jpg">
+            <img width="15%" height="350px" src="./img/films/cabrini.jpg">
+            <img width="15%" height="350px" src="./img/films/ferrari_ver3.jpg">
+            <img width="15%" height="350px" src="./img/films/garfield_movie_ver3.jpg">
+            <img width="15%" height="350px" src="./img/films/ghostbusters_afterlife_two_ver4.jpg">
+            <img width="15%" height="350px" src="./img/films/aquaman_and_the_lost_kingdom_ver18.jpg">
+            <img width="15%" height="350px" src="./img/films/arthur_the_king_ver2.jpg">
+            <img width="15%" height="350px" src="./img/films/cabrini.jpg">
+            <img width="15%" height="350px" src="./img/films/ferrari_ver3.jpg">
+            <img width="15%" height="350px" src="./img/films/garfield_movie_ver3.jpg"> 
+            <img width="15%" height="350px" src="./img/films/ghostbusters_afterlife_two_ver4.jpg">    
+        </div>
+        <div class="carouselxs sm:hidden flex">
+            <img class="carousel-item" src="./img/films/aquaman_and_the_lost_kingdom_ver18.jpg">
+            <img class="carousel-item" src="./img/films/arthur_the_king_ver2.jpg">
+            <img class="carousel-item" src="./img/films/cabrini.jpg">
+            <img class="carousel-item" src="./img/films/ferrari_ver3.jpg">
+            <img class="carousel-item" src="./img/films/garfield_movie_ver3.jpg">
+            <img class="carousel-item" src="./img/films/ghostbusters_afterlife_two_ver4.jpg">
         </div>
     </div>
     <div class="infos">
@@ -190,26 +199,19 @@
         </div>
         <div class="sport">
             <h1>Profitez du streaming illimité des matchs en direct</h1>
-            <div class="carousel-sport">
-                <div class="sport-carousel">
-                    <img width="15%" height="350px" src="./img/sports/Group-18.png">
-                    <img width="15%" height="350px" src="./img/sports/f-1-1.png">
-                    <img width="15%" height="350px" src="./img/sports/f-2-1.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-1.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-10.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-4.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-8.png">
-                    <img width="15%" height="350px" src="./img/sports/ucl_sp_hero_landscape_0.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-18.png">
-                    <img width="15%" height="350px" src="./img/sports/f-1-1.png">
-                    <img width="15%" height="350px" src="./img/sports/f-2-1.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-1.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-10.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-4.png">
-                    <img width="15%" height="350px" src="./img/sports/Group-8.png">
-                    <img width="15%" height="350px" src="./img/sports/ucl_sp_hero_landscape_0.png">
-                </div>
-    
+            <div class="sport-carousel">
+                <img width="15%" height="350px" src="./img/sports/f-1-1.png">
+                <img width="15%" height="350px" src="./img/sports/f-2-1.png">
+                <img width="15%" height="350px" src="./img/sports/Group-1.png">
+                <img width="15%" height="350px" src="./img/sports/Group-10.png">
+                <img width="15%" height="350px" src="./img/sports/Group-18.png">
+                <img width="15%" height="350px" src="./img/sports/Group-4.png">
+                <img width="15%" height="350px" src="./img/sports/f-1-1.png">
+                <img width="15%" height="350px" src="./img/sports/f-2-1.png">
+                <img width="15%" height="350px" src="./img/sports/Group-1.png">
+                <img width="15%" height="350px" src="./img/sports/Group-10.png">
+                <img width="15%" height="350px" src="./img/sports/Group-18.png">
+                <img width="15%" height="350px" src="./img/sports/Group-4.png">
             </div>
         </div>
         <div class="ratings">
@@ -268,4 +270,4 @@
 </html>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="./carousel.js"></script>
+<script src="./index.js"></script>
