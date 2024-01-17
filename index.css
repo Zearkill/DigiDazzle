@@ -96,7 +96,7 @@ body {
     width: 100%;
 }
 
-.plan {
+/* .plan {
     display: flex;
     justify-content: center;
     gap: 2vw;
@@ -142,7 +142,7 @@ body {
 
 #plan-1,#plan-3 {
     background: linear-gradient(to bottom ,#663a8d, #663a8d, #511981);
-}
+}*/
 
 .plans-infos {
     display: flex;
