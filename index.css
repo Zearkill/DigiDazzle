@@ -96,55 +96,7 @@ body {
     width: 100%;
 }
 
-/* .plan {
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    text-align: center;
-    width: 100%;
-}
-
-.plan div {
-    border: 2px solid #9769bf;
-    border-radius: 10px;
-    padding: 0 1vw;
-    max-width: 22%;
-}
-
-.plan div:hover {
-    scale: 1.05;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.plan ul {
-    text-align: left;
-    line-height: 2rem;
-}
-
-.plan button {
-    width: 60%;
-    margin-bottom: 0;
-}
-
-.plan ul li {
-    position: relative;
-    left: -6%;
-    list-style: none;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    text-align: left;
-}
-
-.checkmark {
-    font-weight: bolder;
-}
-
-#plan-1,#plan-3 {
-    background: linear-gradient(to bottom ,#663a8d, #663a8d, #511981);
-}*/
-
-.plans-infos {
+/* .plans-infos {
     display: flex;
     justify-content: center;
     margin: 5vh 0;
@@ -161,7 +113,7 @@ body {
 .plans-infos div ion-icon {
     font-size: 60px;
     color: #a46ed4;
-}
+} */
 
 .sport {
     width: 100%;
