@@ -8,8 +8,8 @@
     <title>Digideals</title>
 </head>
 <body>
-    <div class="nav-bar flex text-center sm:text-left jutify-center justify-between h-[15vh] px-6">
-        <div class="logo w-1/5 items-center flex justify-center sm:-translate-y-3 sm:block w-[100%]">
+    <div class="nav-bar flex text-center sm:text-left justify-evenly h-[15vh] px-6">
+        <div class="logo items-center flex justify-center sm:-translate-y-3 sm:block w-[100%]">
             <a href="./index.html"><img class="h-full" src="./img/Store Logo copy.png" alt="Store Logo"></a>
         </div>
         <div class="menu flex-col sm:flex-row items-center w-full gap-6 hidden sm:flex justify-evenly w-2/5 items-center font-bold">
@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="header sm:flex justify-evenly sm:h-[85vh] px-4 sm:px-0">
+    <div class="header sm:flex justify-evenly sm:h-fit px-4 sm:px-0">
         <div class="header-text text-center items-center sm:w-1/2 flex flex-col gap-4 justify-center">
             <h1 class="font-bold text-4xl sm:text-6xl">ACCÉDEZ A<br>TOUTES LES<br>CHAINES TÉLÉ</h1>
             <p class="text-xs sm:text-sm">Profitez d'une qualité d'image exceptionnelle allant jusqu'à 8K, sur tous<br>vos appareils, partout dans le Monde.</p>
@@ -96,34 +96,34 @@
             <img width="15%" height="350px" src="./img/films/ghostbusters_afterlife_two_ver4.jpg">    
         </div>
     </div>
-    <div class="infos">
-        <div class="left">
-            <h3>Avec tous les événements sportifs et PPV premium</h3>
-            <div class="infos-img">
-                <div class="row">
-                    <img src="./img/channels/Canal.png" alt="channel">
-                    <img src="./img/channels/discovery.png" alt="channel">
-                    <img src="./img/channels/HBO.png" alt="channel">    
+    <div class="infos sm:flex justify-center gap-36">
+        <div class="left sm:w-1/3">
+            <h3 class="text-2xl text-center font-semibold">Avec tous les événements sportifs et PPV premium</h3>
+            <div class="infos-img w-full">
+                <div class="row w-full flex justify-evenly py-8">
+                    <img class="w-1/4" src="./img/channels/Canal.png" alt="channel">
+                    <img class="w-1/4" src="./img/channels/discovery.png" alt="channel">
+                    <img class="w-1/4" src="./img/channels/HBO.png" alt="channel">    
                 </div>
-                <div class="row">
-                    <img src="./img/channels/netflix.png" alt="channel">
-                    <img src="./img/channels/nickelodeon.png" alt="channel">
-                    <img src="./img/channels/ocs.png" alt="channel">    
+                <div class="row w-full flex justify-evenly py-8">
+                    <img class="w-1/4" src="./img/channels/netflix.png" alt="channel">
+                    <img class="w-1/4" src="./img/channels/nickelodeon.png" alt="channel">
+                    <img class="w-1/4" src="./img/channels/ocs.png" alt="channel">    
                 </div>
             </div>
         </div>
-        <div class="right">
-            <h3>Regardez le sport, les films et les séries en illimités partout où vous voulez.</h3>
-            <ul>
-                <li>Aucune facture mensuelle pour regarder le foot</li>
-                <li>Aucune connaissance requise pour l'installation</li>
-                <li>Un support technique à votre écoute 7j/7</li>
-                <li>Un contenu mis à jour régulièrement</li>
-                <li>EPG et bouquets soigneusement Organisés</li>
-                <li>Compatible avec tous vos appareils</li>
-                <li>Satisfait ou remboursé</li>
+        <div class="right sm:w-1/3 text-center">
+            <h3 class="text-xl font-semibold">Regardez le sport, les films et les séries en illimités partout où vous voulez.</h3>
+            <ul class="flex flex-col gap-1 py-4 text-left">
+                <li><ion-icon  class="mx-2" name="checkmark-outline"></ion-icon>Aucune facture mensuelle pour regarder le foot</li>
+                <li><ion-icon  class="mx-2" name="checkmark-outline"></ion-icon>Aucune connaissance requise pour l'installation</li>
+                <li><ion-icon  class="mx-2" name="checkmark-outline"></ion-icon>Un support technique à votre écoute 7j/7</li>
+                <li><ion-icon  class="mx-2" name="checkmark-outline"></ion-icon>Un contenu mis à jour régulièrement</li>
+                <li><ion-icon  class="mx-2" name="checkmark-outline"></ion-icon>EPG et bouquets soigneusement Organisés</li>
+                <li><ion-icon  class="mx-2" name="checkmark-outline"></ion-icon>Compatible avec tous vos appareils</li>
+                <li><ion-icon  class="mx-2" name="checkmark-outline"></ion-icon>Satisfait ou remboursé</li>
             </ul>
-            <button class="header-button">Profitez dès Maintenant</button>
+            <button class="header-button bg-red-500 p-2 rounded-md my-2 font-semibold">Profitez dès Maintenant</button>
         </div>
     </div>
     <div class="plans-section mt-12">
@@ -200,7 +200,7 @@
             </div>
         </div>
         <div class="sport">
-            <h1>Profitez du streaming illimité des matchs en direct</h1>
+            <h1 class="text-2xl font-semibold">Profitez du streaming illimité des matchs en direct</h1>
             <div class="sport-carousel">
                 <img width="15%" height="350px" src="./img/sports/f-1-1.png">
                 <img width="15%" height="350px" src="./img/sports/f-2-1.png">
@@ -216,18 +216,18 @@
                 <img width="15%" height="350px" src="./img/sports/Group-4.png">
             </div>
         </div>
-        <div class="ratings">
-            <div class="clients">
-                <h1>100.000+</h1>
-                <h5>Clients satisfaits</h5>
+        <div class="ratings flex flex-col mx-4 sm:mx-0 sm:flex-row justify-center gap-4">
+            <div class="clients border-2 p-6 rounded-lg flex flex-col gap-2 sm:w-1/4">
+                <h1 id="clients_counter" class="text-6xl font-semibold"></h1>
+                <h5 class="text-2xl">Clients satisfaits</h5>
             </div>
-            <div class="chaines">
-                <h1>50.000+</h1>
-                <h5>Chaînes mondiales</h5>
+            <div class="chaines border-2 p-6 rounded-lg flex flex-col gap-2 sm:w-1/4">
+                <h1 id="chaines_counter" class="text-6xl font-semibold"></h1>
+                <h5 class="text-2xl">Chaînes mondiales</h5>
             </div>
-            <div class="films-series">
-                <h1>70.000+</h1>
-                <h5>Films & Séries</h5>
+            <div class="films_series  border-2 p-6 rounded-lg flex flex-col gap-2 sm:w-1/4">
+                <h1 id="films_series_counter" class="text-6xl font-semibold"></h1>
+                <h5 class="text-2xl">Films & Séries</h5>
             </div>
         </div>
         <div class="reviews">
