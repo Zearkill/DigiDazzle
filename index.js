@@ -24,15 +24,12 @@ function nextSlide() {
     showSlide(currentIndex + 1);
 }
 
-// Auto slide every 3 seconds
 intervalId = setInterval(nextSlide, 3000);
 
-// Stop auto slide when hovering over the carousel
 document.querySelector('.posters').addEventListener('mouseenter', function() {
     clearInterval(intervalId);
 });
 
-// Resume auto slide when not hovering
 document.querySelector('.posters').addEventListener('mouseleave', function() {
     intervalId = setInterval(nextSlide, 3000);
 });
@@ -41,23 +38,18 @@ document.querySelector('.posters').addEventListener('mouseleave', function() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Set the target element that will trigger the counter
     const triggerElement = document.querySelector(".ratings");
 
-    // Set the initial values for counting
     let count1 = 0;
     let count2 = 0;
     let count3 = 0;
 
-    // Set the target values for counting
     const target1 = 100000;
     const target2 = 50000;
     const target3 = 70000;
 
-    // Set the duration for counting (in milliseconds)
     const duration = 1000;
     
-    // Function to update the counters
     function updateCounters(timestamp) {
         if (!start) start = timestamp;
         const progress = timestamp - start;
@@ -75,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Function to check if the trigger element is in the viewport
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         return (
@@ -86,18 +77,15 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 
-    // Function to handle scroll events
     function handleScroll() {
         if (isInViewport(triggerElement)) {
-            start = null; // Reset the start time
+            start = null;
             requestAnimationFrame(updateCounters);
-            window.removeEventListener("scroll", handleScroll); // Remove the scroll event listener once triggered
+            window.removeEventListener("scroll", handleScroll);
         }
     }
 
-    // Initial check on page load
     handleScroll();
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 });
