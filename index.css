@@ -56,41 +56,6 @@ body {
     height: auto;
 }
 
-/* .infos {
-    display: flex;
-    justify-content: center;
-}
-
-.infos .right button {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,0);
-}
-
-.infos .left {
-    width: 50%;
-    text-align: center;
-}
-
-.infos-img {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 2rem 5rem;
-    gap: 20%;
-    height: 100%;
-}
-
-.infos-img .row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.infos-img img {
-    width: 25%;
-    height: fit-content;
-} */
-
 .plans-section {
     text-align: center;
     width: 100%;
