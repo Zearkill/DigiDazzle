@@ -3,9 +3,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto';
-    cursor: pointer;
     transition-duration: 0.2s;
     color: white;
+}
+
+a {
+    cursor: pointer;
 }
 
 body {
